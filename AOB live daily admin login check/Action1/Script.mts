@@ -4,7 +4,7 @@ Browser("Home - Advantage Bank_2").Navigate Parameter("Site")
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebEdit("username").Set "Avi N" @@ script infofile_;_ZIP::ssf2.xml_;_
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebEdit("password").SetSecure "67f4c94d8650d36a35a2fe7fad4120f19df88a19b742abc7aed241cb" @@ script infofile_;_ZIP::ssf3.xml_;_
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Sign-In").Click @@ script infofile_;_ZIP::ssf4.xml_;_
-If Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Welcome").Exist Then @@ script infofile_;_ZIP::ssf4.xml_;_
+Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebButton("Send").Exist Then @@ script infofile_;_ZIP::ssf4.xml_;_
 Reporter.ReportEvent micPass, "admin login live", " admin login live passed  !"
 else
 	Reporter.ReportEvent micFail, "admin Login live ", " user has no access" 
@@ -17,8 +17,7 @@ Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebEdit("recip
 Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebEdit("recipient.bankName").Set "OneZ" @@ script infofile_;_ZIP::ssf9.xml_;_
 Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebNumber("amount").Set "200" @@ script infofile_;_ZIP::ssf10.xml_;_
 Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebEdit("description").Set "Transaction number 1" @@ script infofile_;_ZIP::ssf11.xml_;_
-Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebButton("Send").Click @@ script infofile_;_ZIP::ssf12.xml_;_
-Browser("Home - Advantage Bank").Page("Accounts - Advantage Bank").Link("Dashboard").Click
+Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebButton("Send").Click
 
 
  @@ script infofile_;_ZIP::ssf23.xml_;_
