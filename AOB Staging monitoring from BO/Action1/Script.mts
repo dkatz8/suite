@@ -1,6 +1,6 @@
 ﻿
 Browser("Home - Advantage Bank_2").Page("Home - Advantage Bank").Sync
-Browser("Home - Advantage Bank_2").Navigate "https://advantageonlinebanking.com/" @@ hightlight id_;_5185452_;_script infofile_;_ZIP::ssf41.xml_;_
+Browser("Home - Advantage Bank_2").Navigate "https://aadvantageonlinebanking.com/" @@ hightlight id_;_5185452_;_script infofile_;_ZIP::ssf41.xml_;_
 If Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Sign-In").Exist Then @@ script infofile_;_ZIP::ssf4.xml_;_
 Reporter.ReportEvent micPass, "AOB live", " AOB is UP !"
 else
