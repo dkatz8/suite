@@ -17,8 +17,4 @@ Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebEdit("recip
 Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebEdit("recipient.bankName").Set "OneZ" @@ script infofile_;_ZIP::ssf9.xml_;_
 Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebNumber("amount").Set "200" @@ script infofile_;_ZIP::ssf10.xml_;_
 Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebEdit("description").Set "Transaction number 1" @@ script infofile_;_ZIP::ssf11.xml_;_
-Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebButton("Send").Click @@ script infofile_;_ZIP::ssf12.xml_;_
-Browser("Home - Advantage Bank").Page("Accounts - Advantage Bank").Link("Dashboard").Click
-
-
- @@ script infofile_;_ZIP::ssf23.xml_;_
+Browser("Home - Advantage Bank").Page("New Transfer - Advantage").WebButton("Send").Click @@ script infofile_;_ZIP::ssf23.xml_;_
