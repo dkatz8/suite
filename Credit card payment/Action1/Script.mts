@@ -21,8 +21,6 @@ Browser("Browser_3").Page("Afrekenen - Magento").WebEdit("postcode").Set "321456
 Browser("Browser_3").Page("Afrekenen - Magento").WebEdit("telephone").Set "050986552"
 Browser("Browser_3").Page("Afrekenen - Magento").WebRadioGroup("Free").Select "freeshipping_freeshipping"
 Browser("Browser_3").Page("Afrekenen - Magento").WebButton("Volgende").Click
-Browser("Openbare Magento 2 demo").Page("Afrekenen - Magento").WebRadioGroup("payment[method]").Select "banktransfer"
-Browser("Openbare Magento 2 demo").Page("Afrekenen - Magento").WebElement("Bank Transfer Payment").Click
 If Not Browser("Openbare Magento 2 demo").Page("Afrekenen - Magento").WebElement(" Transfer Mony").Exist  Then 
 	Reporter.ReportEvent micPass, "Bank Transfer Payment ", " Bank Transfer Paymentt Succeeded !"
 else
